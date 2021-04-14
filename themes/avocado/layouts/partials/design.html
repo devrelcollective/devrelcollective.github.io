@@ -4,13 +4,17 @@
 
   <div class="row">
     <div class="col-md-4">
-    <h3>Location</h3>
-      <p>The closest airport to</p>
-      <p>San Francisco, CA (<a href="https://twitter.com/bffjossy">Jocelyn</a>) <br>
-      Buffalo, NY (<a href="https://twitter.com/QuintessenceAnx">Quintessence</a>) <br>
-      Raleigh, NC (<a href="https://twitter.com/davidgsIoT">David</a>) <br>
-      Paris, France (<a href="https://twitter.com/phrawzty">Dan</a>) <br>
-    </p>
+      {{ if $.Site.Data }}
+        <h3>Location</h3>
+          <p>The closest airport to</p>
+          <p>
+            {{ range $.Site.Data.admins }}
+              {{ partial "admins.html" . }}
+            {{ end }}
+          </p>
+      {{ else }}
+        <p>No Admins!</p>
+      {{ end }}
     </div>
     <div class="col-md-4">
       <h3>Around the Web</h3>

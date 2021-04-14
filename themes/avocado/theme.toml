@@ -1,4 +1,4 @@
-name = "Dimension"
+name = "Avocado"
 license = "CC 3.0"
 licenselink = "https://creativecommons.org/licenses/by/3.0/"
 description = "A port of HTML5UP's dimension theme, optimized for markdown based CMS."
@@ -8,8 +8,8 @@ features = ["blog", "syntax highlighting"]
 min_version = 0.54
 
 [author]
-  name = "d-asnaghi"
-  homepage = "https://d-asnaghi.github.io"
+  name = "davidgs"
+  homepage = "https://davidgs.com"
 
 [original]
     author = "HTML5UP"
